@@ -1,22 +1,28 @@
-import logo from './logo.svg';
+//import logo from './logo.svg';
+// import { Greeting } from './Greeting';
+// import { PeopleList } from './PeopleList';
 import './App.css';
+import { CounterButton } from './CounterButton.js';
+
+// const People = [
+//   {
+//     name: "mourya",
+//     age: 25,
+//     hairColor: "black"
+//   },
+//   {
+//     name: "sreelekha Das",
+//     age: 28,
+//     hairColor: "black"
+//   }
+// ]
 
 function App() {
+  let url = "https://reactjs.org";
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        <CounterButton />
       </header>
     </div>
   );
